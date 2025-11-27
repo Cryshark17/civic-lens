@@ -5,55 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+  <!-- SEO -->
+  <title>Civic Lens</title>
   <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
   <meta name="author" content="Civic Lens">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Civic Lens: Independent Investigative Journalism">
-  <meta property="og:description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
+  <meta property="og:title" content="Civic Lens – See Clearly. Know Deeply. Act Justly.">
+  <meta property="og:description" content="Independent investigative journalism, in-depth reporting, and truth-driven storytelling.">
   <meta property="og:type" content="website">
-  <!-- Update these two URLs to your published GitHub Pages URL and image -->
-  <meta property="og:url" content="https://example.github.io/civic-lens/">
-  <meta property="og:image" content="https://example.github.io/civic-lens/images/civic-lens-social.jpg">
+  <!-- Update this URL to your published GitHub Pages URL -->
+  <meta property="og:url" content="https://your-username.github.io/civic-lens/">
+  <!-- Update this path if you add a real share image -->
+  <meta property="og:image" content="images/civic-lens-og.jpg">
 
-  <title>Civic Lens</title>
+  <!-- Twitter (optional but recommended) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Civic Lens">
+  <meta name="twitter:description" content="Independent investigative journalism, in-depth reporting, and truth-driven storytelling.">
+  <meta name="twitter:image" content="images/civic-lens-og.jpg">
 
-  <!-- Stylesheet -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Skip link -->
+  <!-- Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="site-header">
-    <!-- Light/Dark toggle -->
-    <button id="theme-toggle" aria-label="Toggle light or dark theme">
-      <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-        <defs>
-          <clipPath id="a">
-            <path d="m18.512 18.512h62.977v62.977h-62.977z" />
-          </clipPath>
-        </defs>
-        <g clip-path="url(#a)">
-          <path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531"
-                fill="#333" fill-rule="evenodd" />
-        </g>
-      </svg>
-    </button>
+  <!-- Theme toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark mode">
+    <svg width="28" height="28" viewBox="0 0 100 100" aria-hidden="true">
+      <defs>
+        <clipPath id="toggle-clip">
+          <path d="M18.512 18.512h62.977v62.977h-62.977z" />
+        </clipPath>
+      </defs>
+      <g clip-path="url(#toggle-clip)">
+        <path d="M65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258M72.266 27.734c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" />
+      </g>
+    </svg>
+  </button>
 
+  <header class="site-header">
     <div class="header-inner">
       <div class="brand">
         <p class="site-title">Civic Lens</p>
-        <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
+        <p class="site-subtitle">See Clearly. Know Deeply. Act Justly.</p>
       </div>
 
-      <!-- Navigation: mobile + desktop -->
-      <nav class="primary-nav mobile-nav" aria-label="Main navigation">
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-button">Menu</label>
-        <ul class="menu">
+      <nav class="primary-nav" aria-label="Primary">
+        <!-- checkbox + label used for mobile menu -->
+        <input type="checkbox" id="menu-toggle" class="nav-toggle" hidden>
+        <label for="menu-toggle" class="nav-toggle-label">Menu</label>
+
+        <ul class="nav-list">
           <li><a href="#breaking-news">Breaking News</a></li>
           <li><a href="#featured-articles">Featured Articles</a></li>
           <li><a href="#alerts">Alerts</a></li>
@@ -63,185 +69,197 @@
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Welcome section -->
-    <section class="intro" aria-labelledby="welcome-heading">
-      <h1 id="welcome-heading">Welcome to Civic Lens</h1>
+  <main id="main-content" class="page-main">
+    <!-- Intro / Welcome -->
+    <section class="intro">
+      <h1>Civic Lens</h1>
+      <h2>Welcome to Civic Lens</h2>
       <p>
         We are an independent news organization dedicated to unbiased reporting, investigative journalism,
         and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized
         voices, and shine light on the systems that shape our society.
       </p>
-      <blockquote class="lede-quote">
+      <blockquote class="tagline">
         “We don't follow the narrative. We follow the facts.”
       </blockquote>
     </section>
 
     <!-- Breaking News -->
-    <section id="breaking-news" class="breaking" aria-labelledby="breaking-heading">
-      <h2 id="breaking-heading">Breaking News</h2>
+    <section id="breaking-news" class="breaking-news">
+      <h2>Breaking News</h2>
 
-      <article class="breaking-item">
-        <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-        <p>
-          The Department of Justice has announced a full investigation into decades of water distribution practices
-          affecting tribal lands and rural communities.
-        </p>
-        <video controls preload="metadata" class="news-video">
-          <source src="videos/water-management.mp4" type="video/mp4">
-          Your browser does not support the video tag. You can <a href="videos/water-management.mp4">download the video here</a>.
-        </video>
-      </article>
+      <div class="breaking-grid">
+        <article class="breaking-card">
+          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+          <p>
+            The Department of Justice has announced a full investigation into decades of water distribution
+            practices affecting tribal lands and rural communities.
+          </p>
+          <video class="breaking-video" controls>
+            <source src="videos/water-management.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </article>
 
-      <article class="breaking-item">
-        <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
-        <p>
-          Civil rights advocates argue that the bill disenfranchises thousands of voters of color and those in rural
-          communities, threatening equal access to the ballot.
-        </p>
-        <video controls preload="metadata" class="news-video">
-          <source src="videos/voter-suppression.mp4" type="video/mp4">
-          Your browser does not support the video tag. You can <a href="videos/voter-suppression.mp4">download the video here</a>.
-        </video>
-      </article>
+        <article class="breaking-card">
+          <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+          <p>
+            Civil rights advocates argue that the bill disenfranchises thousands of voters of color and
+            residents in rural communities.
+          </p>
+          <video class="breaking-video" controls>
+            <source src="videos/voter-suppression.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </article>
+      </div>
     </section>
 
     <!-- Featured Articles -->
-    <section id="featured-articles" class="features" aria-labelledby="features-heading">
-      <h2 id="features-heading">Featured Articles</h2>
+    <section id="featured-articles" class="featured-articles">
+      <h2>Featured Articles</h2>
 
-      <article>
-        <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
-        <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
-      </article>
+      <div class="article-grid">
+        <article>
+          <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+          <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+        </article>
 
-      <article>
-        <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
-        <p>An investigative series on cash bail and its disproportionate impact on low-income communities.</p>
-      </article>
+        <article>
+          <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+          <p>An investigative series on cash bail and its disproportionate impact on low-income communities.</p>
+        </article>
 
-      <article>
-        <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
-        <p>Humanizing the labor that keeps households and economies afloat across borders.</p>
-      </article>
+        <article>
+          <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+          <p>Humanizing the labor that keeps households and economies afloat.</p>
+        </article>
 
-      <article>
-        <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
-        <p>Data visualization uncovering ongoing systemic inequality in real estate today.</p>
-      </article>
+        <article>
+          <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+          <p>New data visualizations reveal systemic inequality in real estate today.</p>
+        </article>
 
-      <article>
-        <h3>Climate Injustice: Who Pays for Pollution?</h3>
-        <p>How communities of color bear the brunt of environmental damage and toxic exposure.</p>
-      </article>
+        <article>
+          <h3>Climate Injustice: Who Pays for Pollution?</h3>
+          <p>Communities of color bear the brunt of environmental damage.</p>
+        </article>
 
-      <article>
-        <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
-        <p>Teachers navigate book bans, curriculum restrictions, and escalating culture wars.</p>
-      </article>
+        <article>
+          <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+          <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+        </article>
 
-      <article>
-        <h3>Food Deserts and Corporate Abandonment</h3>
-        <p>Why access to nutrition has become a zip code lottery across the country.</p>
-      </article>
+        <article>
+          <h3>Food Deserts and Corporate Abandonment</h3>
+          <p>Why access to nutrition is still a ZIP-code lottery.</p>
+        </article>
 
-      <article>
-        <h3>Policing Mental Health: A Broken Response System</h3>
-        <p>Examining police interactions with people in crisis and alternatives that save lives.</p>
-      </article>
+        <article>
+          <h3>Policing Mental Health: A Broken Response System</h3>
+          <p>Examining police interactions with people in crisis.</p>
+        </article>
 
-      <article>
-        <h3>The Disinformation Economy</h3>
-        <p>Tracing the profit motives behind fake news empires and viral misinformation.</p>
-      </article>
+        <article>
+          <h3>The Disinformation Economy</h3>
+          <p>Tracing the profit motives behind fake-news empires.</p>
+        </article>
 
-      <article>
-        <h3>Facing the Algorithm: AI and Racial Bias</h3>
-        <p>The coded inequalities that quietly shape decisions about work, housing, and justice.</p>
-      </article>
+        <article>
+          <h3>Facing the Algorithm: AI and Racial Bias</h3>
+          <p>How coded inequalities quietly shape our daily lives.</p>
+        </article>
 
-      <article>
-        <h3>The Voting Maze</h3>
-        <p>A practical guide to understanding your rights amid rapidly changing voting laws.</p>
-      </article>
+        <article>
+          <h3>The Voting Maze</h3>
+          <p>A guide to understanding your rights amid changing voting laws.</p>
+        </article>
 
-      <article>
-        <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
-        <p>Rebuilding trust and infrastructure in communities hit by disasters long after headlines fade.</p>
-      </article>
+        <article>
+          <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+          <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- Alerts / Subscription Form -->
-    <section id="alerts" class="alerts" aria-labelledby="alerts-heading">
-      <h2 id="alerts-heading">Stay Informed. Stay Empowered.</h2>
+    <!-- Alerts / Signup -->
+    <section id="alerts" class="alerts">
+      <h2>Stay Informed. Stay Empowered.</h2>
       <p>Receive text messages with the news you want to know.</p>
 
-      <form action="https://wp.zybooks.com/form-viewer.php" method="post" class="alerts-form">
-        <div class="form-field">
-          <label for="subscriber-name">Name</label>
-          <input id="subscriber-name" name="subscriber_name" type="text" required>
+      <form class="alerts-form" action="https://wp.zybooks.com/form-viewer.php" method="post">
+        <div class="field-row">
+          <div class="field">
+            <label for="subscriber-name">Name</label>
+            <input id="subscriber-name" name="subscriber_name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="subscriber-mobile">Mobile</label>
+            <input id="subscriber-mobile" name="subscriber_mobile" type="tel" autocomplete="tel" required>
+          </div>
         </div>
 
-        <div class="form-field">
-          <label for="subscriber-mobile">Mobile</label>
-          <input id="subscriber-mobile" name="subscriber_mobile" type="tel" inputmode="tel" placeholder="555-555-5555" required>
-        </div>
-
-        <fieldset class="form-field">
+        <fieldset class="preferences">
           <legend>Notification Preferences</legend>
-          <p class="fieldset-hint">Choose the topics you’d like to receive alerts about.</p>
 
-          <div class="checkbox-grid">
-            <div>
-              <input type="checkbox" id="topic-breaking" name="topics[]" value="Breaking News">
-              <label for="topic-breaking">Breaking News</label>
+          <div class="pref-column">
+            <div class="checkbox">
+              <input id="pref-breaking" type="checkbox" name="preferences" value="breaking">
+              <label for="pref-breaking">Breaking News</label>
             </div>
-            <div>
-              <input type="checkbox" id="topic-politics" name="topics[]" value="Politics">
-              <label for="topic-politics">Politics</label>
+            <div class="checkbox">
+              <input id="pref-politics" type="checkbox" name="preferences" value="politics">
+              <label for="pref-politics">Politics</label>
             </div>
-            <div>
-              <input type="checkbox" id="topic-weather" name="topics[]" value="Weather">
-              <label for="topic-weather">Weather</label>
+            <div class="checkbox">
+              <input id="pref-weather" type="checkbox" name="preferences" value="weather">
+              <label for="pref-weather">Weather</label>
             </div>
-            <div>
-              <input type="checkbox" id="topic-sports" name="topics[]" value="Sports">
-              <label for="topic-sports">Sports</label>
+          </div>
+
+          <div class="pref-column">
+            <div class="checkbox">
+              <input id="pref-sports" type="checkbox" name="preferences" value="sports">
+              <label for="pref-sports">Sports</label>
             </div>
-            <div>
-              <input type="checkbox" id="topic-entertainment" name="topics[]" value="Entertainment">
-              <label for="topic-entertainment">Entertainment</label>
+            <div class="checkbox">
+              <input id="pref-entertainment" type="checkbox" name="preferences" value="entertainment">
+              <label for="pref-entertainment">Entertainment</label>
             </div>
-            <div>
-              <input type="checkbox" id="topic-world" name="topics[]" value="World">
-              <label for="topic-world">World</label>
+            <div class="checkbox">
+              <input id="pref-world" type="checkbox" name="preferences" value="world">
+              <label for="pref-world">World</label>
             </div>
-            <div>
-              <input type="checkbox" id="topic-financial" name="topics[]" value="Financial">
-              <label for="topic-financial">Financial</label>
+          </div>
+
+          <div class="pref-column">
+            <div class="checkbox">
+              <input id="pref-financial" type="checkbox" name="preferences" value="financial">
+              <label for="pref-financial">Financial</label>
             </div>
           </div>
         </fieldset>
 
-        <button type="submit" class="button-primary">Subscribe</button>
+        <button type="submit" class="submit-button">Subscribe</button>
       </form>
     </section>
+  </main>
 
-    <!-- Social / Follow Us -->
-    <section id="social" class="social" aria-labelledby="social-heading">
+  <!-- Footer / Social -->
+  <footer class="site-footer">
+    <section id="social" aria-labelledby="social-heading" class="social">
       <h2 id="social-heading">Follow Us</h2>
       <ul class="social-list">
         <li><a href="#" aria-label="Follow Civic Lens on Twitter or X">Twitter/X</a></li>
         <li><a href="#" aria-label="Follow Civic Lens on Instagram">Instagram</a></li>
-        <li><a href="#" aria-label="Subscribe to Civic Lens on YouTube">YouTube</a></li>
+        <li><a href="#" aria-label="Follow Civic Lens on YouTube">YouTube</a></li>
         <li><a href="#" aria-label="Follow Civic Lens on TikTok">TikTok</a></li>
-        <li><a href="#" aria-label="Connect with Civic Lens on LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="Follow Civic Lens on LinkedIn">LinkedIn</a></li>
       </ul>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Civic Lens. All rights reserved.</p>
+    <p class="copyright">&copy; 2025 Civic Lens. All rights reserved.</p>
   </footer>
 
   <script>
@@ -249,17 +267,11 @@
 
     toggleButton.addEventListener('click', () => {
       const body = document.body;
+      const isDark = body.classList.contains('dark-mode');
 
-      if (body.classList.contains('dark-mode')) {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-      } else if (body.classList.contains('light-mode')) {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-      } else {
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        body.classList.add(prefersDark ? 'light-mode' : 'dark-mode');
-      }
+      body.classList.toggle('dark-mode', !isDark);
+      body.classList.toggle('light-mode', isDark);
+      toggleButton.setAttribute('aria-pressed', String(!isDark));
     });
   </script>
 </body>
